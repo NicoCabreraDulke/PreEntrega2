@@ -33,7 +33,7 @@ body {
 header li {
     list-style-type: none;
     color: #fff;
-    padding: 15px;
+    margin: 15px;
 }
 
 header a {
@@ -60,4 +60,22 @@ header ul {
 
 .logo-mindef {
     padding-right: 50px;
+}
+
+.menu-principal li {
+    padding-bottom: 15px;
+}
+
+.menu-secundario li {
+    padding: 20px 5px 20px 5px;
+}
+
+/* Desktop nav animation */
+
+.menu-secundario li:hover {
+    background-color: #00529c;
+}
+
+.menu-principal li:hover {
+    border-bottom: 3px solid #f8b233;
 }
