@@ -79,3 +79,157 @@ header ul {
 .menu-principal li:hover {
     border-bottom: 3px solid #f8b233;
 }
+
+/* Section principal grid - first mobile */
+
+.header-principal {
+    background-color: #d0d0d0;
+    height: 900px;
+    margin: 25px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    'banner'
+    'ingreso'
+    'profesionales'
+    'info';
+}
+
+.ad-banner--principal {
+    background-color: chocolate;
+    height: 300px;
+    grid-area: banner;
+}
+
+.modal-ingreso {
+    background-color: burlywood;
+    height: 100px;
+    grid-area: ingreso;
+}
+
+.modal-ingreso--prof {
+    background-color: cadetblue;
+    height: 100px;
+    grid-area: profesionales;
+}
+
+
+.new-info {
+    background-color: #f8b233;
+    height: 400px;
+    grid-area: info;
+}
+
+@media (min-width: 576px) {
+.modal-ingreso {
+    background-color: burlywood;
+    height: 100px;
+    grid-area: ingreso;
+}
+
+.modal-ingreso--prof {
+    background-color: cadetblue;
+    height: 100px;
+    grid-area: profesionales;
+}
+
+
+.new-info {
+    background-color: #f8b233;
+    height: 500px;
+    grid-area: info;
+}
+
+.ad-banner--principal {
+    background-color: chocolate;
+    height: 300px;
+    grid-area: banner;
+}
+
+.header-principal {
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    'banner banner'
+    'ingreso profesionales'
+    'info info';
+}
+}
+
+@media (min-width: 768px) {
+    .modal-ingreso {
+        background-color: burlywood;
+        height: 150px;
+        grid-area: ingreso;
+    }
+    
+    .modal-ingreso--prof {
+        background-color: cadetblue;
+        height: 150px;
+        grid-area: profesionales;
+    }
+    
+    
+    .new-info {
+        background-color: #f8b233;
+        height: 300px;
+        grid-area: info;
+    }
+    
+    .ad-banner--principal {
+        background-color: chocolate;
+        height: 300px;
+        grid-area: banner;
+    }
+    
+    .header-principal {
+        height: 600px;
+        margin: 50px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        'banner ingreso'
+        'banner profesionales'
+        'info info';
+    }
+    }
+
+
+@media (min-width: 1200px) {
+    .modal-ingreso {
+        background-color: burlywood;
+        height: 100px;
+        grid-area: ingreso;
+    }
+    
+    .modal-ingreso--prof {
+        background-color: cadetblue;
+        height: 100px;
+        grid-area: profesionales;
+    }
+    
+    
+    .new-info {
+        background-color: #f8b233;
+        height: 400px;
+        grid-area: info;
+    }
+    
+    .ad-banner--principal {
+        background-color: chocolate;
+        height: 600px;
+        grid-area: banner;
+    }
+    
+    .header-principal {
+        height: 600px;
+        margin: 50px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        'banner ingreso'
+        'banner profesionales'
+        'banner info';
+    }
+    }
