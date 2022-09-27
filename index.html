@@ -1,37 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ESNM | Escuela Naval Militar</title>
 
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="style/bootstrap.css">
     <!-- Estilo -->
     <link rel="stylesheet" href="style/estilo.css">
 
 </head>
+
 <body>
 
     <header class="header-flex">
-        
+
         <section class="nav-1">
-            
-            <img src="img/logo.png" alt="logo">
-            
-            <ul class="menu-principal">
-                <li class="link-active"><a href="#">INICIO</a></li>
+
+            <img class="logo-mobile" src="img/logo.png" alt="logo">
+
+            <ul class="menu-principal no-responsive">
+                <li><a href="#">INICIO</a></li>
                 <li><a href="#">FORMACION</a></li>
                 <li><a href="#">INGRESO</a></li>
                 <li><a href="#">CONTACTO</a></li>
             </ul>
-            
+
         </section>
 
         <section class="nav-2">
-            
-            <img class="logo-mindef" src="img/logo-mindef.png" alt="logo defensa">
-            
-            <ul class="menu-secundario">
+
+            <img class="logo-mindef no-responsive" src="img/logo-mindef.png" alt="logo defensa">
+
+            <ul class="menu-secundario no-responsive">
                 <li><a href="#">Escuela</a></li>
                 <li><a href="#">Vida del cadete</a></li>
                 <li><a href="#">Historia</a></li>
@@ -39,29 +43,106 @@
             </ul>
 
         </section>
-        
+
     </header>
-    
+
     <section class="header-principal">
-        
+
         <div class="ad-banner--principal">
-        
+
+            <img src="img/cadetes.jpg" alt="Sarmiento" class="img-responsive">
+
         </div>
-        
+
         <div class="modal-ingreso">
 
+            <a class="texto-btn" data-bs-toggle="modal" data-bs-target="#cadetes"><i class="fa-solid fa-user"></i> INGRESO DE CADETES</a>
+
+            <!-- Modal -->
+            <div class="modal fade" id="cadetes" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Ingreso de cadetes</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur necessitatibus
+                                cumque fugit nobis dolorum laboriosam mollitia officia inventore iure maxime, quod totam
+                                minus sapiente sequi? Delectus provident quibusdam maiores voluptas!
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary">Mas información</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
-        
+
         <div class="modal-ingreso--prof">
 
-        
+            <a class="texto-btn" data-bs-toggle="modal" data-bs-target="#profesionales"><i class="fa-solid fa-user-graduate"></i> INGRESO DE PROFESIONALES</a>
+
+            <!-- Modal -->
+            <div class="modal fade" id="profesionales" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Ingreso de profesionales</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur necessitatibus
+                                cumque fugit nobis dolorum laboriosam mollitia officia inventore iure maxime, quod totam
+                                minus sapiente sequi? Delectus provident quibusdam maiores voluptas!
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary">Mas información</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
         <div class="new-info">
-
+            
+            <ul>
+                <h2 class="info-titulo">Información importante</h2>
+                <li>
+                    <h4>Abierta la inscripción para Cadetes</h4>
+                    <p>Fecha de cierre 02 Septiembre</p>
+                </li>
+                <li>
+                    <h4>Convocatoria profesionales</h4>
+                    <p>Con permanencia en el destino</p>
+                </li>
+                <li>
+                    <h4>Concurso de ingreso para personal docente</h4>
+                    <p>Lista de profesionales convocados</p>
+                </li>
+            </ul>
         </div>
-        
+
     </section>
 
+    <div class="card-redes">
+        
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+    
+    <script src="https://kit.fontawesome.com/337c233b98.js" crossorigin="anonymous"></script>
+
 </body>
+
 </html>
