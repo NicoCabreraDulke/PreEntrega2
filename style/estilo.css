@@ -31,8 +31,26 @@ body {
     background-color: #fff;
 }
 
-ol, ul {
+ol,
+ul {
     padding-left: 0;
+}
+
+h6,
+.h6,
+h5,
+.h5,
+h4,
+.h4,
+h3,
+.h3,
+h2,
+.h2,
+h1,
+.h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,300;0,400;0,700;1,500&family=Montserrat:wght@300;400;600&family=Roboto&display=swap');
@@ -65,6 +83,7 @@ ol, ul {
     justify-content: flex-end;
     align-items: center;
     padding-right: 50px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
 }
 
 header li {
@@ -123,11 +142,11 @@ header ul {
     margin: 25px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-areas: 
-    'banner'
-    'ingreso'
-    'profesionales'
-    'info';
+    grid-template-areas:
+        'banner'
+        'ingreso'
+        'profesionales'
+        'info';
 }
 
 .img-responsive {
@@ -147,9 +166,6 @@ header ul {
 }
 
 .ad-banner--principal p {
-    font-family: 'Fira Sans', sans-serif;
-    font-style: italic;
-    font-weight: 500;
     padding: 10px;
     text-align: center;
     margin: auto 0;
@@ -171,7 +187,7 @@ header ul {
     color: #fff;
     font-family: 'Fira Sans Condensed', sans-serif;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 .modal-ingreso--prof {
@@ -187,7 +203,7 @@ header ul {
 
 @media (min-width: 1200px) {
     .modal-ingreso--prof a:hover {
-    border-bottom: 3px solid #f8b233;
+        border-bottom: 3px solid #f8b233;
     }
 }
 
@@ -204,20 +220,20 @@ header ul {
 
 @media (min-width: 1200px) {
     .modal-ingreso a:hover {
-    border-bottom: 3px solid #f8b233;
+        border-bottom: 3px solid #f8b233;
     }
 }
 
 .new-info {
     background-color: #d0d0d0;
-    height: 400px;
+    height: auto;
     width: 100%;
     padding: 15px;
     grid-area: info;
     display: flex;
     flex-direction: column;
     justify-items: center;
-    
+
 }
 
 .new-info ul {
@@ -227,16 +243,16 @@ header ul {
 
 .new-info h2 {
     font-family: 'Fira Sans Condensed', sans-serif;
-    font-size: 28px;
+    font-size: 22px;
     font-weight: 700;
-    padding-top: 50px;
+    padding-top: 15px;
     color: #00529c;
 }
 
-.new-info h4{
+.new-info h4 {
     color: #00529c;
     font-family: 'Fira Sans Condensed', sans-serif;
-    font-size: 22px;
+    font-size: 18px;
 }
 
 .new-info p {
@@ -250,43 +266,47 @@ header ul {
 
 @media (min-width: 576px) {
 
-.modal-ingreso {
-    background-color: #00529c;
-    height: 100px;
-    grid-area: ingreso;
-}
+    .modal-ingreso {
+        background-color: #00529c;
+        height: 100px;
+        grid-area: ingreso;
+    }
 
-.modal-ingreso--prof {
-    background-color: #002e64;
-    height: 100px;
-    grid-area: profesionales;
-}
+    .modal-ingreso--prof {
+        background-color: #002e64;
+        height: 100px;
+        grid-area: profesionales;
+    }
 
-.texto-btn {
-    font-size: 18px;
-}
+    .texto-btn {
+        font-size: 18px;
+    }
 
-.new-info {
-    background-color: #d0d0d0;
-    height: 400px;
-    grid-area: info;
-}
+    .new-info {
+        background-color: #d0d0d0;
+        height: auto;
+        grid-area: info;
+    }
 
-.ad-banner--principal {
-    background-color: chocolate;
-    height: 300px;
-    grid-area: banner;
-}
+    .new-info ul {
+        padding-bottom: 25px;
+    }
 
-.header-principal {
-    margin: 50px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-    'banner banner'
-    'ingreso profesionales'
-    'info info';
-}
+    .ad-banner--principal {
+        background-color: chocolate;
+        height: 300px;
+        grid-area: banner;
+    }
+
+    .header-principal {
+        margin: 50px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            'banner banner'
+            'ingreso profesionales'
+            'info info';
+    }
 }
 
 @media (min-width: 1200px) {
@@ -295,54 +315,352 @@ header ul {
         height: 100px;
         grid-area: ingreso;
     }
-    
+
     .modal-ingreso--prof {
         background-color: #002e64;
         height: 100px;
         grid-area: profesionales;
     }
-    
+
     .texto-btn {
         font-size: 18px;
     }
-    
+
     .new-info {
         background-color: #d0d0d0;
-        height: 325px;
+        height: 350px;
         grid-area: info;
     }
 
     .new-info h2 {
-        padding-top: 10px;
+        padding-top: 25px;
     }
-    
+
     .ad-banner--principal {
-        background-color: chocolate;
-        height: 525px;
+        height: 550px;
         grid-area: banner;
     }
-    
+
     .header-principal {
         margin: 50px;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-areas: 
-        'banner ingreso'
-        'banner profesionales'
-        'banner info';
+        grid-template-areas:
+            'banner ingreso'
+            'banner profesionales'
+            'banner info';
     }
+}
+
+
+@media (max-width: 910px) {
+    .no-responsive {
+        display: none;
+        visibility: hidden;
     }
 
-
-    @media (max-width: 910px) {
-        .no-responsive {
-            display: none;
-            visibility: hidden;
-        }
-
-        .nav-2 {
-            display: none;
-            visibility: hidden;
-        }
-
+    .nav-2 {
+        display: none;
+        visibility: hidden;
     }
+
+}
+
+/* Redes */
+
+.section-redes {
+    height: 100px;
+    margin: 15px 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.boton-redes {
+    width: 55px;
+    height: 55px;
+    line-height: 50px;
+    font-size: 20px;
+    margin: 15px;
+    padding: 0;
+    border: 3px solid #00529c;
+    color: #00529c;
+    border-radius: 50%;
+    min-width: 55px;
+    transition: 550ms ease;
+}
+
+.boton-redes:hover {
+    width: 65px;
+    height: 65px;
+    line-height: 60px;
+    font-size: 30px;
+    border: 3px solid #00529c;
+    background-color: #00529c;
+    color: #fff
+}
+
+/* Section estudios first mobile */
+
+.section-estudios {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.ad-banner--fragata {
+    width: 100%;
+    height: 200px;
+    padding: 0px 15px;
+    background-image: url(../img/fragata.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+}
+
+.ad-banner--fragata p {
+    background-color: #002f64da;
+    padding: 1px 2px;
+}
+
+.ad-banner--fragata p:hover {
+    background-color: #002f64;
+}
+
+.conteiner-carreras {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #00529c;
+    color: #fff;
+    padding: 15px;
+}
+
+.conteiner-carreras h2 {
+    color: #fff;
+    font-family: 'Fira sans', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 22px;
+    border-bottom: 3px solid #f8b233;
+    margin-bottom: 15px;
+}
+
+.conteiner-carreras img {
+    margin: 10px 0px;
+    width: 100px;
+}
+
+.conteiner-carreras h4 {
+    font-family: 'Fira sans', sans-serif;
+    font-size: 18px;
+    margin: 5px 0px;
+}
+
+.item-comando {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 1200px) {
+    .section-estudios {
+        flex-direction: row;
+    }
+
+    .ad-banner--fragata {
+        width: 50%;
+        height: 300px;
+    }
+
+    .conteiner-carreras {
+        width: 50%;
+        height: 300px;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+
+@media (max-width: 576px) {
+    .new-info ul {
+        padding-bottom: 15px;
+    }
+}
+
+footer {
+    background-color: #141414;
+    height: 200px;
+    color: #fff;
+    bottom: 0;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo tablas */
+
+.tabla {
+    display: grid;
+    width: 60%;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    cursor: default;
+}
+
+.tabla>span {
+    padding: 8px 4px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-right: 6px;
+}
+
+.tabla-de2 {
+    display: grid;
+    width: 60%;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 15px;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    cursor: default;
+}
+
+.tabla-de2>span {
+    padding: 8px 4px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-right: 6px;
+}
+
+.tabla-referencia {
+    display: grid;
+    width: 60%;
+    margin: 0 auto;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 15px;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    cursor: default;
+}
+
+.tabla-referencia>span {
+    padding: 8px 4px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-right: 6px;
+}
+
+.span-celeste {
+    background-color: #98c0eb;
+}
+
+.span-naranja {
+    background-color: #eeb258;
+}
+
+.span-verde {
+    background-color: #76e78e;
+}
+
+.span-amarillo {
+    background-color: #d2e083;
+}
+
+.span-celeste:hover {
+    background-color: #7daada;
+}
+
+.span-naranja:hover {
+    background-color: #bb893f;
+}
+
+.span-verde:hover {
+    background-color: #50aa64;
+}
+
+.span-amarillo:hover {
+    background-color: #9ea861;
+}
+
+.titulo-tabla {
+    margin: 0px auto;
+    width: 50%;
+    background-color: #002e64;
+    height: 35px;
+    color: #fff;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+.titulo-tabla2 {
+    margin: 0px auto;
+    width: 50%;
+    background-color: #00529c;
+    height: 35px;
+    color: #fff;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+@media (max-width: 980px) {
+
+    .titulo-tabla {
+        font-size: 1rem;
+    }
+
+    .titulo-tabla2 {
+        font-size: 1rem;
+    }
+
+}
+
+.contenido-primario {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.parrafo-primario h4 {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 22px;
+    color: #002e64;
+    padding-bottom: 16px;
+    padding-top: 20px;
+
+}
+
+.parrafo-primario p {
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.5rem;
+}
